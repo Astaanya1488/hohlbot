@@ -75,7 +75,7 @@ def main() -> None:
     application.add_handler(CommandHandler("random", random_command))
 
     # Реагируем на любые текстовые сообщения (кроме команд)
-    application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, echo))
+    #application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, echo))
 
     # Запускаем бота
     application.run_polling()
